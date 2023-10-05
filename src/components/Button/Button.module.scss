@@ -1,0 +1,32 @@
+.wrapper {
+    min-width: 74px;
+    height: 30px;
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 4px 24px;
+    background-color: var(--primary);
+    color: var(--white);
+    border-radius: 8px;
+    border: 1px solid var(--primary);
+    box-shadow: 0 20px 27px rgb(0 0 0 / 5%);
+    transition: 0.3s;
+    cursor: pointer;
+    &:hover {
+        background-color: var(--white);
+        color: var(--primary);
+    }
+    .success {
+        background-color: #15bb2b;
+        &:hover {
+            background-color: #0f6a1b;
+        }
+    }
+}
+
+@media (max-width: 1366px) {
+    .wrapper {
+        padding: 4px 20px;
+        min-width: 120px;
+    }
+}
